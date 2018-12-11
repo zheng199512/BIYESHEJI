@@ -1,0 +1,9 @@
+package cn.e3mall.item.controller;
+/**
+ * 生成静态页面测试controller
+ * @author 郑小飞
+ *
+ */
+public class HtmlGenController {
+
+}

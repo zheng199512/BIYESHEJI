@@ -1,0 +1,12 @@
+1524967722863	Extract local variable 'solrDocumentList'
+1524967938684	Extract local variable 'list'
+1524968023919	Extract local variable 'item'
+1524971101100	Extract local variable 'queryResponse'
+1524971139681	Extract local variable 'solrDocumentList'
+1524971171549	Extract local variable 'numFound'
+1524971271958	Extract local variable 'highlighting'
+1524971613592	Extract local variable 'list'
+1524972719215	Delete element
+1524977722902	Rename package 'cn.e3mall.search'
+1524978789808	Extract local variable 'searchResult'
+1524978829557	Extract local variable 'recordCount'

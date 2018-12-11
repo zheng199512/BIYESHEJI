@@ -1,0 +1,50 @@
+package cn.e3mall.order.service.impl;
+
+import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+
+import cn.e3mall.common.jedis.JedisClient;
+import cn.e3mall.common.utils.E3Result;
+import cn.e3mall.mapper.TbOrderItemMapper;
+import cn.e3mall.mapper.TbOrderMapper;
+import cn.e3mall.mapper.TbOrderShippingMapper;
+import cn.e3mall.order.pojo.OrderInfo;
+import cn.e3mall.order.service.OrderService;
+
+/**
+ * 订单处理服务
+ * @author 郑小飞
+ *
+ */
+@Service
+public class OrderServiceImpl implements OrderService {
+
+	@Autowired
+	private TbOrderMapper orderMapper;
+	@Autowired
+	private TbOrderItemMapper orderItemMapper;
+	@Autowired
+	private TbOrderShippingMapper orderShippingMapper;
+	@Autowired
+	private JedisClient jedisClient;
+	
+	@Value("${ORDER_ID_GEN_KEY}")
+	private String ORDER_ID_GEN_KEY;
+	@Value("${ORDER_ID_START}")
+	private String ORDER_ID_START;
+	@Value("${ORDER_DETAIL_ID_GEN_KEY}")
+	private String ORDER_DETAIL_ID_GEN_KEY;
+	
+	@Override
+	public E3Result createOrder(OrderInfo orderInfo) {
+		//订单表--先生成订单号
+		if (!jedisClient.exists(ORDER_ID_GEN_KEY)) {
+			jedisClient.set(ORDER_ID_GEN_KEY, ORDER_ID_START);
+		}
+		jedisClient.incr(ORDER_ID_GEN_KEY);
+		return null;
+	}
+
+}

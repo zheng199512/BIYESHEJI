@@ -1,0 +1,9 @@
+package cn.e3mall.item.pojo;
+
+import org.apache.http.impl.cookie.PublicSuffixListParser;
+
+import cn.e3mall.pojo.TbItem;
+
+public class Item extends TbItem {
+	
+}

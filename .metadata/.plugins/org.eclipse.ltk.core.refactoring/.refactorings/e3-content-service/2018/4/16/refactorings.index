@@ -1,0 +1,7 @@
+1523936446370	Extract local variable 'selectByPrimaryKey'
+1523939613160	Extract local variable 'selectByPrimaryKey'
+1523940489109	Extract local variable 'countByExample'
+1523944504112	Extract local variable 'example'
+1523949621831	Extract local variable 'selectByPrimaryKey'
+1524143600490	Extract local variable 'createCriteria'
+1524143700797	Extract local variable 'list'

@@ -1,0 +1,9 @@
+package cn.e3mall.sso.controller;
+/**
+ *用户注册Controller
+ * @author 郑小飞
+ *
+ */
+public class RegisterController {
+
+}

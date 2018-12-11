@@ -1,0 +1,40 @@
+package cn.e3mall.sso.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import cn.e3mall.common.utils.E3Result;
+import cn.e3mall.mapper.TbUserMapper;
+import cn.e3mall.pojo.TbUser;
+import cn.e3mall.pojo.TbUserExample;
+import cn.e3mall.pojo.TbUserExample.Criteria;
+import cn.e3mall.sso.service.RegisterService;
+@Service
+public class RegisterServiceImpl implements RegisterService {
+	@Autowired
+	private TbUserMapper userMapper;
+
+	@Override
+	public E3Result checkData(String param, int type) {
+
+		TbUserExample example=new TbUserExample();
+		Criteria criteria = example.createCriteria();
+		if(type==1){
+			criteria.andUsernameEqualTo(param);
+		}else if(type==2){
+			criteria.andPhoneEqualTo(param);
+		}else if(type==3){
+			criteria.andEmailEqualTo(param);
+		}else{
+			return E3Result.build(400, "数据不符合！");
+		}
+		List<TbUser> list = userMapper.selectByExample(example);
+		if(list!=null&&list.size()>0){
+			return E3Result.ok(false);
+		}
+		return E3Result.ok(true);
+	}
+
+}

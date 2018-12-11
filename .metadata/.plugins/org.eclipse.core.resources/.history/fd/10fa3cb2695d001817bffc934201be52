@@ -1,0 +1,11 @@
+package cn.e3mall.sso.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import cn.e3mall.common.utils.E3Result;
+
+@Controller
+public class TokenController {
+	@RequestMapping("/user/token/{token}")
+}

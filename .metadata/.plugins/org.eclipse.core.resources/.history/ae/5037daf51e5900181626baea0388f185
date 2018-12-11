@@ -1,0 +1,7 @@
+package cn.e3mall.freemarker;
+
+public class FreeMarkerTest {
+	public void testFreeMarker(){
+		
+	}
+}

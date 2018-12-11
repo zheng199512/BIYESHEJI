@@ -1,0 +1,9 @@
+package cn.e3mall.item.controller;
+/**
+ * 商品详情的controller
+ * @author 郑小飞
+ *
+ */
+public class ItemController {
+
+}

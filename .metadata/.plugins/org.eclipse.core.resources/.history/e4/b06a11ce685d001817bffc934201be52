@@ -1,0 +1,20 @@
+package cn.e3mall.sso.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import cn.e3mall.common.jedis.JedisClient;
+import cn.e3mall.common.utils.E3Result;
+import cn.e3mall.sso.service.TokenService;
+@Service
+public class TokenServiceImpl implements TokenService {
+
+	@Autowired
+	private JedisClient jedisClient;
+	@Override
+	public E3Result getUserByToken(String token) {
+		
+		return null;
+	}
+
+}

@@ -1,0 +1,27 @@
+package cn.e3mall.sso.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import cn.e3mall.common.utils.E3Result;
+
+/**
+ *用户注册Controller
+ * @author 郑小飞
+ *
+ */
+@Controller
+public class RegisterController {
+	
+	@RequestMapping("/page/register")
+	public String showRegister(){
+		return "register";
+	}
+	@RequestMapping("/page/login")
+	public String showLogin(){
+		return "login";
+	}
+	public E3Result checkDate(){
+		
+	}
+}

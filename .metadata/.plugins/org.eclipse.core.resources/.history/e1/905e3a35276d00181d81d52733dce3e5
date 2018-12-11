@@ -1,0 +1,64 @@
+package cn.e3mall.order.interceptor;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.StringUtils;
+import org.springframework.web.servlet.HandlerInterceptor;
+import org.springframework.web.servlet.ModelAndView;
+
+import cn.e3mall.cart.service.CartService;
+import cn.e3mall.common.utils.CookieUtils;
+import cn.e3mall.common.utils.E3Result;
+import cn.e3mall.common.utils.JsonUtils;
+import cn.e3mall.pojo.TbItem;
+import cn.e3mall.pojo.TbUser;
+import cn.e3mall.sso.service.TokenService;
+/**
+ * 用户登录拦截器
+ * @author 郑小飞
+ *
+ */
+public class LoginInterceptor implements HandlerInterceptor {
+
+	@Autowired
+	private TokenService tokenService;
+	@Autowired
+	private CartService cartService;
+	@Override
+	public void afterCompletion(HttpServletRequest arg0, HttpServletResponse arg1, Object arg2, Exception arg3)
+			throws Exception {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void postHandle(HttpServletRequest arg0, HttpServletResponse arg1, Object arg2, ModelAndView arg3)
+			throws Exception {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+		String token = CookieUtils.getCookieValue(request, "token");
+		if (StringUtils.isEmpty(token)) {
+			response.sendRedirect("http://localhost:8088/page/login?redirect="+request.getRequestURI());
+			return false;
+		}
+		E3Result e3Result = tokenService.getUserByToken(token);
+		if (e3Result.getStatus()!=200) {
+			response.sendRedirect("http://localhost:8088/page/login?redirect="+request.getRequestURI());
+			return false;
+		}
+		TbUser user=(TbUser) e3Result.getData();
+		request.setAttribute("user", user);
+		String json = CookieUtils.getCookieValue(request, "cart", true);
+		if (!StringUtils.isEmpty(json)) {
+			cartService.mergeCart(user.getId(), JsonUtils.jsonToList(json), TbItem.class);
+		}
+		return false;
+	}
+
+}

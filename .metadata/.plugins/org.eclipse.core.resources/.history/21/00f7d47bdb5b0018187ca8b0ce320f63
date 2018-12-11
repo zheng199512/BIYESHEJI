@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>测试Freemaker</title>
+</head>
+<body>
+    <span>学生信息</span><br>
+    <span>学号：${student.id}</span>&nbsp;&nbsp;&nbsp;&nbsp;
+    <span>姓名：${student.name}</span>&nbsp;&nbsp;&nbsp;&nbsp;
+    <span>年龄：${student.age}</span>&nbsp;&nbsp;&nbsp;&nbsp;
+    <span>住址：${student.address}</span>&nbsp;&nbsp;&nbsp;&nbsp;
+    <br>
+    <hr>
+    <br>
+    <hr>
+    <table border="1">
+        <tr>
+            <th>学号</th>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>家庭住址</th>
+        </tr>
+        <#list stuList as stu>
+        <#if stu_index%2==0>
+                <tr bgcolor="aqua">
+            <#else/>
+                <tr bg bgcolor="#f5f5dc"></tr>
+        </#if>
+            <td>${stu.id}</td>
+            <td>${stu.name}</td>
+            <td>${stu.age}</td>
+            <td>${stu.address}</td>
+        </tr>
+        </#list>
+    </table>
+    <span>当前的日期：${date?date}</span><br>
+    <span>当前的时间：${time?time}</span>
+    <span>当前的时间和日期：${time?time}</span>
+    <span>当前的时间：string("yyyymm/dd hh:mm:ss")</span><br>
+    <span>对于空值的处理：${val}</span>
+
+
+</body>
+</html>

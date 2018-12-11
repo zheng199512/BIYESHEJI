@@ -1,0 +1,5 @@
+#生成订单的id
+ORDER_ID_GEN_KEY=ORDER_ID_GEN
+#生成第一个订单的id
+ORDER_ID_START=100222
+#生成订单明细的id

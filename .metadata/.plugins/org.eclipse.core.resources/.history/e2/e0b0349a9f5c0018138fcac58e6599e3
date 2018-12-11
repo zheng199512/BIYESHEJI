@@ -1,0 +1,13 @@
+package cn.e3mall.sso.controller;
+
+import org.springframework.stereotype.Controller;
+
+/**
+ *用户注册Controller
+ * @author 郑小飞
+ *
+ */
+@Controller
+public class RegisterController {
+
+}

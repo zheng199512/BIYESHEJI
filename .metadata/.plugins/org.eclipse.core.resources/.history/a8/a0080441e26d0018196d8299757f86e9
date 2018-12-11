@@ -1,0 +1,7 @@
+package cn.e3mall.order.pojo;
+
+import cn.e3mall.pojo.TbOrder;
+
+public class OrderInfo extends TbOrder {
+
+}

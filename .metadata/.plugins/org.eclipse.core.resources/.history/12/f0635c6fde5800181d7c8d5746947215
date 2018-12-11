@@ -1,0 +1,13 @@
+package cn.e3mall.item.controller;
+
+import org.springframework.stereotype.Controller;
+
+/**
+ * 商品详情的controller
+ * @author 郑小飞
+ *
+ */
+@Controller
+public class ItemController {
+
+}

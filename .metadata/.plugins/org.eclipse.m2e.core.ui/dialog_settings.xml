@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="cn.e3mall"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="e3-cart-web"/>
+			<item value="e3-parent"/>
+			<item value="e3-cart-service"/>
+			<item value="e3-cart"/>
+			<item value="e3-cart-interface"/>
+			<item value="e3-sso-web"/>
+			<item value="e3-sso-service"/>
+			<item value="e3-sso"/>
+			<item value="e3-sso-interface"/>
+			<item value="e3-item-web"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="E:\BiyeSheji\"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenModuleWizardParentPage">
+		<list key="moduleName">
+			<item value="e3-cart-service"/>
+			<item value="e3-cart-interface"/>
+			<item value="e3-sso-service"/>
+			<item value="e3-sso-interface"/>
+			<item value="e3-search-service"/>
+			<item value="e3-search-interface"/>
+			<item value="e3-content-service"/>
+			<item value="e3-content-interface"/>
+			<item value="e3-manager-web"/>
+			<item value="e3-manager-service"/>
+			<item value="e3-manager-interface"/>
+			<item value="e3-manager-dao"/>
+			<item value="e3-manager-pojo"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="E:\BiyeSheji\e3-sso"/>
+			<item value="E:\BiyeSheji\e3-manager\e3-manager-dao"/>
+			<item value="E:\BiyeSheji\e3-parent"/>
+			<item value="E:\BiyeSheji\e3-search-web\src\main\java"/>
+			<item value="E:\BiyeSheji\e3-search\e3-search-service\src\test\java\cn\e3mall\solrj\TestSolrJ.java"/>
+			<item value="E:\BiyeSheji\e3-manager-web\src\main\webapp\WEB-INF\jsp\content-category.jsp"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

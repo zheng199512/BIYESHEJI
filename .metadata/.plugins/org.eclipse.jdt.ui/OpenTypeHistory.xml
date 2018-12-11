@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=e3-manager-interface/src\/main\/java&lt;cn.e3mall.service{ItemService.java[ItemService" modifiers="513" timestamp="1526456623231"/>
+<typeInfo handle="=e3-content-interface/src\/main\/java&lt;cn.e3mall.content.service{ContentCategoryService.java[ContentCategoryService" modifiers="513" timestamp="1523939562051"/>
+<typeInfo handle="=e3-content-interface/src\/main\/java&lt;cn.e3mall.content.service{ContentService.java[ContentService" modifiers="513" timestamp="1524143271446"/>
+<typeInfo handle="=e3-search-interface/src\/main\/java&lt;cn.e3mall.search.service{SearchItemService.java[SearchItemService" modifiers="513" timestamp="1524892749738"/>
+<typeInfo handle="=e3-search-interface/src\/main\/java&lt;cn.e3mall.search.service{SearchService.java[SearchService" modifiers="513" timestamp="1524979017133"/>
+<typeInfo handle="=e3-manager-interface/src\/main\/java&lt;cn.e3mall.service{ParamService.java[ParamService" modifiers="513" timestamp="1525081973032"/>
+<typeInfo handle="=e3-search-service/E:\/BiyeSheji\/repository\/org\/apache\/activemq\/activemq-all\/5.11.2\/activemq-all-5.11.2.jar&lt;org.apache.activemq.memory.list(MessageList.class[MessageList" modifiers="1537" timestamp="1463412214000"/>
+<typeInfo handle="=e3-search-service/E:\/BiyeSheji\/repository\/org\/apache\/activemq\/activemq-all\/5.11.2\/activemq-all-5.11.2.jar&lt;javax.jms(MessageListener.class[MessageListener" modifiers="1537" timestamp="1463412214000"/>
+<typeInfo handle="=e3-manager-interface/src\/main\/java&lt;cn.e3mall.service{ItemCatService.java[ItemCatService" modifiers="513" timestamp="1521873071444"/>
+<typeInfo handle="=e3-manager-pojo/src\/main\/java&lt;cn.e3mall.pojo{TbItem.java[TbItem" modifiers="1" timestamp="1521697485645"/>
+<typeInfo handle="=e3-sso-interface/src\/main\/java&lt;cn.e3mall.sso.service{RegisterService.java[RegisterService" modifiers="513" timestamp="1526894610171"/>
+<typeInfo handle="=e3-sso-interface/src\/main\/java&lt;cn.e3mall.sso.service{LoginService.java[LoginService" modifiers="513" timestamp="1526913582453"/>
+<typeInfo handle="=e3-sso-interface/src\/main\/java&lt;cn.e3mall.sso.service{TokenService.java[TokenService" modifiers="513" timestamp="1526954939893"/>
+<typeInfo handle="=e3-sso-service/E:\/BiyeSheji\/repository\/org\/javassist\/javassist\/3.15.0-GA\/javassist-3.15.0-GA.jar&lt;javassist.compiler(TokenId.class[TokenId" modifiers="1537" timestamp="1463411588000"/>
+</typeInfoHistroy>

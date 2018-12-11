@@ -1,0 +1,5 @@
+1526787963630	Extract local variable 'configuration'
+1526788062136	Extract local variable 'template'
+1526791304404	Extract local variable 'fileWriter'
+1526972942414	Copy file
+1526973081605	Copy folders
